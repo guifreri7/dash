@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Dashboard</title>
+
+<style>
+
+body{
+    margin:0;
+    font-family: Arial;
+}
+
+.dashboard-container{
+    display:flex;
+    height:100vh;
+}
+
+/* MENU LATERAL */
+.sidebar{
+    width:220px;
+    background:#1e1e2f;
+    color:white;
+    padding:20px;
+}
+
+.sidebar h2{
+    text-align:center;
+}
+
+.sidebar ul{
+    list-style:none;
+    padding:0;
+}
+
+.sidebar ul li{
+    padding:10px;
+    margin:10px 0;
+    background:#2c2c40;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.sidebar ul li:hover{
+    background:#3d3d55;
+}
+
+/* CONTEÚDO */
+.main{
+    flex:1;
+    padding:30px;
+    background:#f4f4f4;
+}
+
+.cards{
+    display:flex;
+    gap:20px;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    width:200px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="dashboard-container">
+
+    <!-- MENU -->
+    <div class="sidebar">
+        <h2>Painel</h2>
+
+        <ul>
+            <li>Início</li>
+            <li>Usuários</li>
+            <li>Produtos</li>
+            <li>Relatórios</li>
+            <li>Configurações</li>
+        </ul>
+
+    </div>
+
+    <!-- CONTEÚDO -->
+    <div class="main">
+
+        <h1>Dashboard</h1>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Usuários</h3>
+                <p>768</p>
+            </div>
+
+            <div class="card">
+                <h3>Vendas</h3>
+                <p>546</p>
+            </div>
+
+            <div class="card">
+                <h3>Pedidos</h3>
+                <p>124</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
