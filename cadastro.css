@@ -1,0 +1,104 @@
+/* Body do cadastro */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f2f5;
+}
+
+/* Container centralizado */
+.form-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 25px 30px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Cabeçalho do formulário */
+.form-container h2 {
+    margin: 0 0 10px 0;
+    color: #333;
+    font-size: 24px;
+    text-align: center;
+}
+
+.form-container p {
+    text-align: center;
+    color: #777;
+    margin-bottom: 25px;
+}
+
+/* Grupos de campos */
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    color: #555;
+    font-weight: 600;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 6px rgba(52,152,219,0.2);
+}
+
+/* Ações do formulário */
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.btn {
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    transition: all 0.2s ease;
+}
+
+/* Botão salvar */
+.btn.salvar {
+    background-color: #2ecc71; /* verde */
+    color: #fff;
+}
+
+.btn.salvar:hover {
+    background-color: #27ae60;
+}
+
+/* Botão cancelar */
+.btn.cancelar {
+    background-color: #e74c3c; /* vermelho */
+    color: #fff;
+}
+
+.btn.cancelar:hover {
+    background-color: #c0392b;
+}
+
+/* Responsividade */
+@media (max-width: 500px) {
+    .form-actions {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
