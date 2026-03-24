@@ -24,6 +24,9 @@
             <li><a href="index.php?page=usuario">Usuário</a></li>
             <li>Relatórios</li>
             <li>Configurações</li>
+            <li><a href="categoria.php">Categorias</a></li>
+            <li><a href="postagem.php">Postagens</a></li>
+            </li>
         </ul>
     </div>
 
