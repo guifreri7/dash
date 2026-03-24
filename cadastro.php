@@ -1,26 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Cadastro de Usuário</title>
+<link rel="stylesheet" href="cadastrocss1.css">
+</head>
+
+<body>
+
 <div class="form-container">
     <h2>Cadastro de Usuário</h2>
     <p>Preencha os dados para adicionar um novo usuário</p>
 
     <form action="salvar_usuario.php" method="POST">
+
         <div class="form-group">
-            <label for="nome">Nome</label>
-            <input type="text" id="nome" name="nome" placeholder="Digite o nome" required>
+            <label>Nome</label>
+            <input type="text" name="nome" required>
         </div>
 
         <div class="form-group">
-            <label for="email">E-mail</label>
-            <input type="email" id="email" name="email" placeholder="Digite o e-mail" required>
+            <label>E-mail</label>
+            <input type="email" name="email" required>
         </div>
 
         <div class="form-group">
-            <label for="senha">Senha</label>
-            <input type="password" id="senha" name="senha" placeholder="Digite a senha" required>
+            <label>Senha</label>
+            <input type="password" name="senha" required>
         </div>
 
         <div class="form-group">
-            <label for="acesso">Nível de Acesso</label>
-            <select id="acesso" name="acesso" required>
+            <label>Nível de Acesso</label>
+            <select name="acesso" required>
                 <option value="">Selecione</option>
                 <option value="administrador">Administrador</option>
                 <option value="moderador">Moderador</option>
@@ -29,8 +40,8 @@
         </div>
 
         <div class="form-group">
-            <label for="status">Status</label>
-            <select id="status" name="status" required>
+            <label>Status</label>
+            <select name="status" required>
                 <option value="">Selecione</option>
                 <option value="ativo">Ativo</option>
                 <option value="inativo">Inativo</option>
@@ -38,8 +49,18 @@
         </div>
 
         <div class="form-actions">
-            <button type="submit" class="btn salvar">Salvar</button>
-            <button type="reset" class="btn cancelar">Cancelar</button>
+            <button type="submit">Salvar</button>
+            <button type="reset">Limpar</button>
         </div>
+
     </form>
+
+    <br>
+    <a href="index.php">
+        <button>⬅ Voltar ao Dashboard</button>
+    </a>
+
 </div>
+
+</body>
+</html>

@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #1e1e2f, #2b2b45);
+    margin: 0;
+    padding: 0;
+}
+
+/* CONTAINER */
+.form-container {
+    width: 400px;
+    margin: 60px auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* TÍTULO */
+.form-container h2 {
+    margin-bottom: 5px;
+}
+
+.form-container p {
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+/* CAMPOS */
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    transition: 0.3s;
+}
+
+/* EFEITO AO CLICAR */
+input:focus, select:focus {
+    border-color: #4CAF50;
+    outline: none;
+    box-shadow: 0 0 5px rgba(76,175,80,0.5);
+}
+
+/* BOTÕES */
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* BOTÃO SALVAR */
+button[type="submit"] {
+    background: #4CAF50;
+    color: white;
+}
+
+button[type="submit"]:hover {
+    background: #45a049;
+}
+
+/* BOTÃO RESET */
+button[type="reset"] {
+    background: #f44336;
+    color: white;
+}
+
+button[type="reset"]:hover {
+    background: #da190b;
+}
+
+/* BOTÃO VOLTAR */
+a button {
+    width: 100%;
+    margin-top: 15px;
+    background: #333;
+    color: #fff;
+}
+
+a button:hover {
+    background: #111;
+}

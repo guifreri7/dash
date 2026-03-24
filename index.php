@@ -3,7 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <title>Dashboard</title>
+
 <link rel="stylesheet" href="padrao.css">
+<link rel="stylesheet" href="usuario1.css">
 
 </head>
 
@@ -16,38 +18,46 @@
         <h2>Painel</h2>
 
         <ul>
-            <li>Início</li>
-            <li><a href="usuario.php">Usuários</a></li>
+            <li><a href="index.php">Início</a></li>
+            <li><a href="cadastro.php">Cadastrar Usuário</a></li>
             <li>Produtos</li>
+            <li><a href="index.php?page=usuario">Usuário</a></li>
             <li>Relatórios</li>
             <li>Configurações</li>
         </ul>
-
     </div>
 
     <!-- CONTEÚDO -->
     <div class="main">
 
+        <?php
+        $page = isset($_GET['page']) ? $_GET['page'] : 'home';
+
+        if ($page == 'usuario') {
+            include 'usuario.php';
+        } else {
+        ?>
+
         <h1>Dashboard</h1>
 
         <div class="cards">
-
             <div class="card">
                 <h3>Usuários</h3>
-                <p>768</p>
+                <p>172</p>
             </div>
 
             <div class="card">
                 <h3>Vendas</h3>
-                <p>546</p>
+                <p>684</p>
             </div>
 
             <div class="card">
                 <h3>Pedidos</h3>
-                <p>124</p>
+                <p>-243</p>
             </div>
-
         </div>
+
+        <?php } ?>
 
     </div>
 
