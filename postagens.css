@@ -1,0 +1,76 @@
+.header-content {
+    margin-bottom: 20px;
+}
+
+.header-content h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.header-content p {
+    color: #777;
+    font-size: 14px;
+}
+
+.table-responsive {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    background: #1a252f;
+    color: #fff;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    font-size: 14px;
+}
+
+td {
+    border-bottom: 1px solid #eee;
+}
+
+/* HOVER */
+tbody tr:hover {
+    background: #f4f6f8;
+}
+
+/* COLUNA CONTEÚDO */
+td:nth-child(3) {
+    max-width: 250px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* STATUS */
+.ativo {
+    color: green;
+    font-weight: bold;
+}
+
+.inativo {
+    color: red;
+    font-weight: bold;
+}
+
+/* AÇÕES */
+td:last-child {
+    color: #3498db;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+td:last-child:hover {
+    text-decoration: underline;
+}
