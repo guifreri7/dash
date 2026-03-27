@@ -1,104 +1,45 @@
-/* Body do cadastro */
+/* =============================================
+   CADASTRO DE USUÁRIO — usa padrao.css como base
+   Este arquivo apenas adiciona estilos específicos
+   que o padrao.css não cobre.
+   ============================================= */
+
+/* Centraliza o form-container na página standalone */
 body {
-    margin: 0;
-    font-family: 'Arial', sans-serif;
-    background-color: #f0f2f5;
-}
-
-/* Container centralizado */
-.form-container {
-    max-width: 600px;
-    margin: 50px auto;
-    padding: 25px 30px;
-    background-color: #fff;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-}
-
-/* Cabeçalho do formulário */
-.form-container h2 {
-    margin: 0 0 10px 0;
-    color: #333;
-    font-size: 24px;
-    text-align: center;
-}
-
-.form-container p {
-    text-align: center;
-    color: #777;
-    margin-bottom: 25px;
-}
-
-/* Grupos de campos */
-.form-group {
-    margin-bottom: 18px;
-}
-
-.form-group label {
-    display: block;
-    margin-bottom: 6px;
-    color: #555;
-    font-weight: 600;
-}
-
-.form-group input,
-.form-group select {
-    width: 100%;
-    padding: 12px 15px;
-    font-size: 14px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    outline: none;
-    transition: all 0.3s ease;
-}
-
-.form-group input:focus,
-.form-group select:focus {
-    border-color: #3498db;
-    box-shadow: 0 0 6px rgba(52,152,219,0.2);
-}
-
-/* Ações do formulário */
-.form-actions {
+    min-height: 100vh;
     display: flex;
-    justify-content: space-between;
-    margin-top: 25px;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 50px 20px;
+    background: linear-gradient(135deg, #07110b, #0b1a12, #102419);
+    font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+    color: #e5f3ea;
 }
 
-.btn {
-    padding: 12px 20px;
-    border-radius: 8px;
-    font-weight: bold;
+/* Botão Voltar — estilo secundário */
+.btn-back {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+    padding: 11px;
+    background: linear-gradient(145deg, #1e293b, #111827);
+    color: #9ccfb5;
+    border: 1px solid #2d4a3a;
+    border-radius: 10px;
+    font-weight: 600;
     font-size: 14px;
+    font-family: inherit;
     cursor: pointer;
-    border: none;
     transition: all 0.2s ease;
+    text-decoration: none;
+    box-shadow: 4px 4px 12px rgba(0,0,0,0.4);
 }
 
-/* Botão salvar */
-.btn.salvar {
-    background-color: #2ecc71; /* verde */
-    color: #fff;
-}
-
-.btn.salvar:hover {
-    background-color: #27ae60;
-}
-
-/* Botão cancelar */
-.btn.cancelar {
-    background-color: #e74c3c; /* vermelho */
-    color: #fff;
-}
-
-.btn.cancelar:hover {
-    background-color: #c0392b;
-}
-
-/* Responsividade */
-@media (max-width: 500px) {
-    .form-actions {
-        flex-direction: column;
-        gap: 10px;
-    }
+.btn-back:hover {
+    background: linear-gradient(145deg, #2d3748, #1a2535);
+    color: #d1fae5;
+    transform: translateY(-2px);
 }

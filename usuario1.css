@@ -1,100 +1,25 @@
+/* =============================================
+   USUÁRIOS — complemento do padrao.css
+   Estilos específicos da tabela de usuários
+   ============================================= */
 
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f4f6f9;
+/* Coluna de acesso com cor por nível */
+.acesso-admin {
+    color: #6ee7b7;
+    font-weight: 600;
 }
 
-
-.header-content {
-    margin-bottom: 20px;
+.acesso-moderador {
+    color: #d8b4fe;
+    font-weight: 600;
 }
 
-.header-content h2 {
-    margin: 0;
-    color: #333;
+.acesso-usuario {
+    color: #93c5fd;
+    font-weight: 600;
 }
 
-.header-content p {
-    color: #777;
-    margin-top: 5px;
-}
-
-
-.table-responsive {
-    background: #fff;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
-
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-
-thead {
-    background-color: #2c3e50;
-    color: white;
-}
-
-th {
-    text-align: left;
-    padding: 12px;
-    font-weight: normal;
-}
-
-
-td {
-    padding: 12px;
-    border-bottom: 1px solid #ddd;
-}
-
-
-td:nth-child(5) {
-    font-weight: bold;
-}
-
-td:nth-child(5):contains("Ativo") {
-    color: #2ecc71;
-}
-
-td:nth-child(5):contains("Inativo") {
-    color: #e74c3c;
-}
-
-
-td:last-child {
-    color: #3498db;
-    cursor: pointer;
-    font-weight: bold;
-}
-
-td:last-child:hover {
-    text-decoration: underline;
-}
-
-
-.status {
-    padding: 5px 12px;
-    border-radius: 20px;
-    font-size: 12px;
-    font-weight: bold;
-    color: white;
-    display: inline-block;
-    text-align: center;
-    min-width: 60px;
-}
-
-
-.status.ativo {
-    background-color: #2ecc71; 
-}
-
-
-.status.inativo {
-    background-color: #e74c3c; 
-    
+.acesso-editor {
+    color: #fbbf24;
+    font-weight: 600;
 }
